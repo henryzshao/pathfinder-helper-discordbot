@@ -7,9 +7,9 @@ public class BotDatabase {
     public static Connection openDatabase() {
         Connection databaseConnection = null;
         try {
-            String dbURL = "jdbc:postgresql://localhost:5432/botDB";
+            String dbURL = "jdbc:postgresql://localhost:5432/<databaseNameHere>";
             String user = "postgres";
-            String pass = "990528";
+            String pass = "<Password>";
             databaseConnection = DriverManager.getConnection(dbURL, user, pass);
             //System.out.println("Opened database successfully");
         } catch (Exception e) {
