@@ -10,7 +10,7 @@ public class Bot extends ListenerAdapter {
         try {
             BotDatabase.CreateTable(); //create database tables
 
-            String token = "OTcwNTA2ODI4ODI1OTA3MjYw.Ym886w.grhBs33oB7uw4gWP2o1ViAwQaLs";
+            String token = ""; //token here
             JDA api = JDABuilder.createDefault(token).build();
             api.addEventListener(new MessageListener());
         } catch (Exception e)
